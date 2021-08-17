@@ -7,10 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
-
-import static org.codehaus.groovy.runtime.DefaultGroovyMethods.collect;
 
 @BaseUrl(value = "http://localhost:3000/registration")
 
@@ -81,17 +80,38 @@ public class GerchikRegistrationPage extends AbstractPage {
 
     }
 
-    public ArrayList<String> clickOnFirstInputAndCheckNonAvailableValidationError (){
+    public ArrayList<String> clickOnFirstInputAndCheckNonAvailableValidationError() {
         ArrayList<String> array = new ArrayList<>();
         clickOnSubmitButton();
-        String validationErrorBeforeClick =  allInputs.get(0).getAttribute("class");
+        String validationErrorBeforeClick = allInputs.get(0).getAttribute("class");
         firstName.sendKeys("test");
-        String validationErrorAfterClick =  allInputs.get(0).getAttribute("class");
-       array.add(validationErrorBeforeClick);
+        String validationErrorAfterClick = allInputs.get(0).getAttribute("class");
+        array.add(validationErrorBeforeClick);
         array.add(validationErrorAfterClick);
         return array;
     }
 
+    public List<String> sendKEysAndGetValidationErrorMOreChars() {
+        firstName.sendKeys("sdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsds");//41
+        lastName.sendKeys("sdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdssdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsds");//82
+        email.sendKeys("sdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdsdfsdssdfsdsdfsdsdfsdsdfsdsdfsdsdfsd@gmail.com");//81
+        pass.sendKeys("6465465465465456465465423232Qqq");//31
+        rePass.sendKeys("6465465465465456465465423232Qqq");//31
+        clickOnSubmitButton();
+        System.out.println();
+        List<String> AllErrorsText = getAllErrorsText();
+        return AllErrorsText;
+    }
 
+    public void checkPhoneInputOnCorrectWork (){
+        firstName.sendKeys("Vlad");//41
+        lastName.sendKeys("Shostak");//82
+        email.sendKeys("test@gmail.com");//81
+        phone.sendKeys("001234545");
+        pass.sendKeys("1111111q");//31
+        rePass.sendKeys("1111111q");//31
+        checkboxInput.click();
+        clickOnSubmitButton();
+    }
 
 }

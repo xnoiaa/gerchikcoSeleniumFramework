@@ -61,12 +61,22 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LKRegistrationPage.clickOnFirstInputAndCheckNonAvailableValidationErrorTest">
-    <configuration name="CrmProfile.VacationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput">
+    <configuration name="LKRegistrationPage.checkOnCorrectWorkPhoneInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrmProfile" />
-      <option name="METHOD_NAME" value="VacationTest" />
+      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="METHOD_NAME" value="checkOnCorrectWorkPhoneInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LKRegistrationPage.checkValidationErrorOnMaximumChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="METHOD_NAME" value="checkValidationErrorOnMaximumChars" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,23 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Seeds.balanceoperationCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Seeds" />
-      <option name="METHOD_NAME" value="balanceoperationCreation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput" />
+        <item itemvalue="JUnit.LKRegistrationPage.checkValidationErrorOnMaximumChars" />
         <item itemvalue="JUnit.LKRegistrationPage.clickOnFirstInputAndCheckNonAvailableValidationErrorTest" />
         <item itemvalue="JUnit.LKRegistrationPage.testRegistrationValidationExeptionText" />
         <item itemvalue="JUnit.LKRegistrationPage.test" />
-        <item itemvalue="JUnit.Seeds.balanceoperationCreation" />
-        <item itemvalue="JUnit.CrmProfile.VacationTest" />
       </list>
     </recent_temporary>
   </component>
