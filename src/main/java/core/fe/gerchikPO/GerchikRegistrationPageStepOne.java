@@ -7,13 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @BaseUrl(value = "http://localhost:3000/registration")
 
-public class GerchikRegistrationPage extends AbstractPage {
+public class GerchikRegistrationPageStepOne extends AbstractPage {
 
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div[2]/div[2]/form/div[1]/input")
@@ -52,8 +53,7 @@ public class GerchikRegistrationPage extends AbstractPage {
     })
     private List<WebElement> allInputs;
 
-
-    public GerchikRegistrationPage(final WebDriver driver) {
+    public GerchikRegistrationPageStepOne(final WebDriver driver) {
         super(driver);
     }
 
@@ -114,4 +114,15 @@ public class GerchikRegistrationPage extends AbstractPage {
         clickOnSubmitButton();
     }
 
+    public GerchikRegistrationPageStepTwo checkPhoneInputOnCorrectWork (String email, String phone){
+        firstName.sendKeys("Vlad");
+        lastName.sendKeys("Shostak");
+        this.email.sendKeys(email);
+        this.phone.sendKeys(phone);
+        pass.sendKeys("1111111q");
+        rePass.sendKeys("1111111q");
+        checkboxInput.click();
+        clickOnSubmitButton();
+        return new GerchikRegistrationPageStepTwo(driver);
+    }
 }

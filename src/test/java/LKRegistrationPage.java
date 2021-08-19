@@ -1,19 +1,26 @@
-import core.fe.gerchikPO.GerchikRegistrationPage;
+import core.fe.gerchikPO.GerchikRegistrationPageStepOne;
+import core.fe.gerchikPO.GerchikRegistrationPageStepTwo;
 import org.junit.Assert;
 import org.junit.Test;
 
+import javax.swing.*;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 public class LKRegistrationPage extends BaseTest {
+    Action action;
 
     @Test
     public void testRegistrationValidationExeptionText() {
-        GerchikRegistrationPage gerchikRegistrationPage = new GerchikRegistrationPage(getWebDriver());
+        GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         getWebDriver().get("http://localhost:3000/registration");
-        gerchikRegistrationPage.clickOnSubmitButton();
-        List<String> errorText = gerchikRegistrationPage.getAllErrorsText();
-        List<String> allInputsNames = gerchikRegistrationPage.getInputs();
+        gerchikRegistrationPageStepOne.clickOnSubmitButton();
+        List<String> errorText = gerchikRegistrationPageStepOne.getAllErrorsText();
+        List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
 
         for (int i = 0; i < errorText.size(); i++) {
             if (allInputsNames.get(i).equals("phone")) {
@@ -24,7 +31,6 @@ public class LKRegistrationPage extends BaseTest {
                 Assert.assertEquals("Incorect registration validation exeption ", "Это поле обязательно для подтверждения", errorText.get(i));
                 continue;
             }
-
             Assert.assertEquals("Incorect registration validation exeption", "Это поле обязательно для заполнения", errorText.get(i));
         }
     }
@@ -33,17 +39,17 @@ public class LKRegistrationPage extends BaseTest {
     @Test
     public void clickOnFirstInputAndCheckNonAvailableValidationErrorTest() {
         getWebDriver().get("http://localhost:3000/registration");
-        GerchikRegistrationPage gerchikRegistrationPages = new GerchikRegistrationPage(getWebDriver());
-        ArrayList<String> validationsTextErrorArray = gerchikRegistrationPages.clickOnFirstInputAndCheckNonAvailableValidationError();
+        GerchikRegistrationPageStepOne gerchikRegistrationPagesStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
+        ArrayList<String> validationsTextErrorArray = gerchikRegistrationPagesStepOne.clickOnFirstInputAndCheckNonAvailableValidationError();
         Assert.assertNotEquals("Не зникає валідаційна помилка при кліці на поле", true, validationsTextErrorArray.get(0).equals(validationsTextErrorArray.get(1)));
     }
 
     @Test
     public void checkValidationErrorOnMaximumChars() {
         getWebDriver().get("http://localhost:3000/registration");
-        GerchikRegistrationPage gerchikRegistrationPage = new GerchikRegistrationPage(getWebDriver());
-        List<String> allErrorsText = gerchikRegistrationPage.sendKEysAndGetValidationErrorMOreChars();
-        List<String> allInputsNames = gerchikRegistrationPage.getInputs();
+        GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
+        List<String> allErrorsText = gerchikRegistrationPageStepOne.sendKEysAndGetValidationErrorMOreChars();
+        List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
         for (int i = 0; i < allErrorsText.size(); i++) {
             if (allInputsNames.get(i).equals("name")) {
                 Assert.assertEquals("Incorect registration validation exeption on input ", "Максимальная длина 40 символов", allErrorsText.get(i));
@@ -70,19 +76,32 @@ public class LKRegistrationPage extends BaseTest {
     @Test
     public void checkOnCorrectWorkPhoneInput() {
         getWebDriver().get("http://localhost:3000/registration");
-        GerchikRegistrationPage gerchikRegistrationPage = new GerchikRegistrationPage(getWebDriver());
-        gerchikRegistrationPage.checkPhoneInputOnCorrectWork();
-        List<String> allInputsNames = gerchikRegistrationPage.getInputs();
-        List<String> allErrorsText = gerchikRegistrationPage.getAllErrorsText();
+        GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
+        gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork();
+        List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
+        List<String> allErrorsText = gerchikRegistrationPageStepOne.getAllErrorsText();
         for (int i = 0; i < allErrorsText.size(); i++) {
-            System.out.println(allErrorsText.get(i));
             if (allErrorsText.get(i).equals("Телефон не существует")) {
                 Assert.assertEquals("Incorect registration validation exeption on input ", "Телефон не существует", allErrorsText.get(i));
             }
-            else {
-
-            }
         }
+    }
+
+    @Test
+    public void checkFirstRegistrationStep() throws InterruptedException {
+        Random random = new Random();
+         String email = "testt6@gmail.com";
+        String phone = "631554706";
+        getWebDriver().get("http://localhost:3000/registration");
+        GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
+        GerchikRegistrationPageStepTwo gerchikRegistrationPageStepTwo = gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,phone );
+        Assert.assertEquals("Incorect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());
+        action.wait(8000);
+        gerchikRegistrationPageStepTwo.sendactivationCodeInInput();
+        action.wait(8000);
+
+        gerchikRegistrationPageStepTwo.clickOnsubmitButton();
+        System.out.println("32");
     }
 
 }

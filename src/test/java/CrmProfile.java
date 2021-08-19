@@ -3,6 +3,7 @@ import core.fe.gerchikCrm.ProfilePage;
 import org.junit.Test;
 
 public class CrmProfile extends BaseTest {
+
     @Test
     public void VacationTest(){
         AuthPage authPage = new AuthPage(getWebDriver());

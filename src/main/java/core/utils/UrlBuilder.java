@@ -12,7 +12,7 @@ public class UrlBuilder {
     }
 
     public static <T> String buildUrl(final Class<T> page, final String partialUrl) {
-        final BaseUrl url = page.getAnnotation(BaseUrl.class);
+           final BaseUrl url = page.getAnnotation(BaseUrl.class);
         final String baseUrl = url.value();
         return String.format("%s/%s", baseUrl, partialUrl);
     }

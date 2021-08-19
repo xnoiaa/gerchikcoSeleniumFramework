@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="" />
+    <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/utils/UrlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/utils/UrlBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CrmProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrmProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/GerchikRegistrationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CrmProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CrmProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +35,9 @@
       <find>//input[@class='sc-product__qty']</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -31,6 +47,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1f2rrAklxCQyfnU3QP1mGbfuW2W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553092624486" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/core" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/core/seeds" />
@@ -61,42 +79,41 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput">
+  <component name="RunManager" selected="JUnit.LKRegistrationPage.checkFirstRegistrationStep">
+    <configuration name="CrmProfile.VacationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrmProfile" />
+      <option name="METHOD_NAME" value="VacationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LKRegistrationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LKRegistrationPage.checkFirstRegistrationStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="METHOD_NAME" value="checkFirstRegistrationStep" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LKRegistrationPage.checkOnCorrectWorkPhoneInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
       <option name="METHOD_NAME" value="checkOnCorrectWorkPhoneInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LKRegistrationPage.checkValidationErrorOnMaximumChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="checkValidationErrorOnMaximumChars" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LKRegistrationPage.clickOnFirstInputAndCheckNonAvailableValidationErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="clickOnFirstInputAndCheckNonAvailableValidationErrorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LKRegistrationPage.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput" />
-        <item itemvalue="JUnit.LKRegistrationPage.checkValidationErrorOnMaximumChars" />
-        <item itemvalue="JUnit.LKRegistrationPage.clickOnFirstInputAndCheckNonAvailableValidationErrorTest" />
+        <item itemvalue="JUnit.LKRegistrationPage.checkFirstRegistrationStep" />
         <item itemvalue="JUnit.LKRegistrationPage.testRegistrationValidationExeptionText" />
-        <item itemvalue="JUnit.LKRegistrationPage.test" />
+        <item itemvalue="JUnit.CrmProfile.VacationTest" />
+        <item itemvalue="JUnit.LKRegistrationPage" />
+        <item itemvalue="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput" />
       </list>
     </recent_temporary>
   </component>
@@ -136,13 +153,25 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPage.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/test/java/LKRegistrationPage.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

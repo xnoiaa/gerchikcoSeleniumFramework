@@ -26,8 +26,6 @@ public  class BaseTest {
         webDriver = new ChromeDriver(options);
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
-
-
     }
 
     @After
