@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/utils/UrlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/utils/UrlBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CrmProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrmProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/GerchikRegistrationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CrmProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CrmProfile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +73,7 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LKRegistrationPage.checkFirstRegistrationStep">
+  <component name="RunManager" selected="JUnit.LKRegistrationPage.confirmInvalidEmailConfirCode">
     <configuration name="CrmProfile.VacationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,11 +103,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LKRegistrationPage.checkOnCorrectWorkPhoneInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LKRegistrationPage.confirmInvalidEmailConfirCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="checkOnCorrectWorkPhoneInput" />
+      <option name="METHOD_NAME" value="confirmInvalidEmailConfirCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LKRegistrationPage.confirmInvalidEmailConfirCode" />
+        <item itemvalue="JUnit.LKRegistrationPage" />
         <item itemvalue="JUnit.LKRegistrationPage.checkFirstRegistrationStep" />
         <item itemvalue="JUnit.LKRegistrationPage.testRegistrationValidationExeptionText" />
         <item itemvalue="JUnit.CrmProfile.VacationTest" />
-        <item itemvalue="JUnit.LKRegistrationPage" />
-        <item itemvalue="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput" />
       </list>
     </recent_temporary>
   </component>
@@ -164,16 +158,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/LKRegistrationPage.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

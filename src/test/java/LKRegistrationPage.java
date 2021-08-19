@@ -2,14 +2,17 @@ import core.fe.gerchikPO.GerchikRegistrationPageStepOne;
 import core.fe.gerchikPO.GerchikRegistrationPageStepTwo;
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Random;
+
 
 public class LKRegistrationPage extends BaseTest {
     Action action;
@@ -87,21 +90,35 @@ public class LKRegistrationPage extends BaseTest {
         }
     }
 
+    int num = 34;
+    String email = "test" + num + "@gmail.com";
+    String phone = "6315547" + num;
+
     @Test
-    public void checkFirstRegistrationStep() throws InterruptedException {
-        Random random = new Random();
-         String email = "testt6@gmail.com";
-        String phone = "631554706";
+    public void checkRegistration()   {
         getWebDriver().get("http://localhost:3000/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         GerchikRegistrationPageStepTwo gerchikRegistrationPageStepTwo = gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,phone );
-        Assert.assertEquals("Incorect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());
-        action.wait(8000);
-        gerchikRegistrationPageStepTwo.sendactivationCodeInInput();
-        action.wait(8000);
-
+        Assert.assertEquals("Incorrect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());
+        gerchikRegistrationPageStepTwo.clickOnSendEmailButton();
+        gerchikRegistrationPageStepTwo.sendValidActivationCodeInInput();
         gerchikRegistrationPageStepTwo.clickOnsubmitButton();
-        System.out.println("32");
+        Assert.assertTrue(true);
+        int num =+1;
+
     }
 
+    @Test
+    public void confirmInvalidEmailConfirCode(){
+        getWebDriver().get("http://localhost:3000/registration");
+        GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
+        GerchikRegistrationPageStepTwo gerchikRegistrationPageStepTwo = gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,phone );
+        Assert.assertEquals("Incorrect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());
+        gerchikRegistrationPageStepTwo.clickOnSendEmailButton();
+        gerchikRegistrationPageStepTwo.sendInvalidActivationCodeInInput();
+        gerchikRegistrationPageStepTwo.clickOnsubmitButton();
+        Assert.assertEquals("input--auth text--center error--field",gerchikRegistrationPageStepTwo.getClassOfActivationCodeInput());
+        int num =+1;
+
+    }
 }

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBys;
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @BaseUrl(value = "http://localhost:3000/registration")
@@ -123,6 +124,8 @@ public class GerchikRegistrationPageStepOne extends AbstractPage {
         rePass.sendKeys("1111111q");
         checkboxInput.click();
         clickOnSubmitButton();
+
         return new GerchikRegistrationPageStepTwo(driver);
+
     }
 }
