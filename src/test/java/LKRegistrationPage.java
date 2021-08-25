@@ -1,21 +1,15 @@
-import core.fe.gerchikPO.GerchikRegistrationPageStepOne;
-import core.fe.gerchikPO.GerchikRegistrationPageStepTwo;
+import core.fe.gerchikPO.registration.GerchikRegistrationPageStepOne;
+import core.fe.gerchikPO.registration.GerchikRegistrationPageStepTwo;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import javax.swing.*;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class LKRegistrationPage extends BaseTest {
-    Action action;
+
+    int num = 41;
+    String email = "test" + num + "@gmail.com";
+    String phone = "6315547" + num;
 
     @Test
     public void testRegistrationValidationExeptionText() {
@@ -80,7 +74,7 @@ public class LKRegistrationPage extends BaseTest {
     public void checkOnCorrectWorkPhoneInput() {
         getWebDriver().get("http://localhost:3000/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
-        gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork();
+        gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,"001234545");
         List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
         List<String> allErrorsText = gerchikRegistrationPageStepOne.getAllErrorsText();
         for (int i = 0; i < allErrorsText.size(); i++) {
@@ -88,11 +82,10 @@ public class LKRegistrationPage extends BaseTest {
                 Assert.assertEquals("Incorect registration validation exeption on input ", "Телефон не существует", allErrorsText.get(i));
             }
         }
+        int num =+1;
+
     }
 
-    int num = 34;
-    String email = "test" + num + "@gmail.com";
-    String phone = "6315547" + num;
 
     @Test
     public void checkRegistration()   {

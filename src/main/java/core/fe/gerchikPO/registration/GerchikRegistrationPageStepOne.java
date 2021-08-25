@@ -1,4 +1,4 @@
-package core.fe.gerchikPO;
+package core.fe.gerchikPO.registration;
 
 import core.fe.AbstractPage;
 import core.fe.BaseUrl;
@@ -7,10 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @BaseUrl(value = "http://localhost:3000/registration")
@@ -104,16 +102,6 @@ public class GerchikRegistrationPageStepOne extends AbstractPage {
         return AllErrorsText;
     }
 
-    public void checkPhoneInputOnCorrectWork (){
-        firstName.sendKeys("Vlad");//41
-        lastName.sendKeys("Shostak");//82
-        email.sendKeys("test@gmail.com");//81
-        phone.sendKeys("001234545");
-        pass.sendKeys("1111111q");//31
-        rePass.sendKeys("1111111q");//31
-        checkboxInput.click();
-        clickOnSubmitButton();
-    }
 
     public GerchikRegistrationPageStepTwo checkPhoneInputOnCorrectWork (String email, String phone){
         firstName.sendKeys("Vlad");

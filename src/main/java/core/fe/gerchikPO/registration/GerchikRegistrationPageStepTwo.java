@@ -1,4 +1,4 @@
-package core.fe.gerchikPO;
+package core.fe.gerchikPO.registration;
 
 import core.fe.AbstractPage;
 import org.openqa.selenium.By;
