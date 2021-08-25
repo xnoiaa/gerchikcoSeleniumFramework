@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/registration/GerchikRegistrationPageStepOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikRegistrationPageStepTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/registration/GerchikRegistrationPageStepTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/ConnectToSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/ConnectToSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/GerchikRegistrationPageStepOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,51 +72,51 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginPage.checkValidationsExeption">
-    <configuration name="LKRegistrationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RecoveryPasswordPage">
+    <configuration name="LoginPage.checkValidationsExeptionText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="MAIN_CLASS_NAME" value="LoginPage" />
+      <option name="METHOD_NAME" value="checkValidationsExeptionText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecoveryPasswordPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LKRegistrationPage.checkOnCorrectWorkPhoneInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecoveryPasswordPage.isPresentValidationError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="checkOnCorrectWorkPhoneInput" />
+      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
+      <option name="METHOD_NAME" value="isPresentValidationError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LKRegistrationPage.checkRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecoveryPasswordPage.isPresentValidationErrorAfterClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="checkRegistration" />
+      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
+      <option name="METHOD_NAME" value="isPresentValidationErrorAfterClick" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LKRegistrationPage.testRegistrationValidationExeptionText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecoveryPasswordPage.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="METHOD_NAME" value="testRegistrationValidationExeptionText" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPage.checkValidationsExeption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginPage" />
-      <option name="METHOD_NAME" value="checkValidationsExeption" />
+      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginPage.checkValidationsExeption" />
-        <item itemvalue="JUnit.LKRegistrationPage.checkRegistration" />
-        <item itemvalue="JUnit.LKRegistrationPage" />
-        <item itemvalue="JUnit.LKRegistrationPage.testRegistrationValidationExeptionText" />
-        <item itemvalue="JUnit.LKRegistrationPage.checkOnCorrectWorkPhoneInput" />
+        <item itemvalue="JUnit.RecoveryPasswordPage" />
+        <item itemvalue="JUnit.RecoveryPasswordPage.isPresentValidationErrorAfterClick" />
+        <item itemvalue="JUnit.RecoveryPasswordPage.isPresentValidationError" />
+        <item itemvalue="JUnit.RecoveryPasswordPage.test" />
+        <item itemvalue="JUnit.LoginPage.checkValidationsExeptionText" />
       </list>
     </recent_temporary>
   </component>
