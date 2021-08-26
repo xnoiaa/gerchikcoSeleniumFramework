@@ -7,14 +7,14 @@ public class RecoveryPasswordPage extends BaseTest{
     @Test
     public void isPresentValidationErrorBeforeClick(){
         RecoveryPasswordPageTest recoveryPasswordPageTest = new RecoveryPasswordPageTest(getWebDriver());
-        geBaseLktUrl("/recovery");
+        getBaseLktUrl("/recovery");
         Assert.assertEquals("isPresentValidationErrorBeforeClick",recoveryPasswordPageTest.isPresent(),0);
     }
 
     @Test
     public void isPresentValidationErrorAfterClick(){
         RecoveryPasswordPageTest recoveryPasswordPageTest = new RecoveryPasswordPageTest(getWebDriver());
-        geBaseLktUrl("/recovery");
+        getBaseLktUrl("/recovery");
         recoveryPasswordPageTest.clickOnSubmitButton();
         Assert.assertEquals("isPresentValidationErrorAfterClick",recoveryPasswordPageTest.isPresent(),1);
     }

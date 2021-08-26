@@ -2,6 +2,8 @@ package core.seeds;
 
 import lombok.Data;
 
+import java.text.DateFormat;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 
 @Data
@@ -15,8 +17,9 @@ public class BalanceOperationModel extends Model {
     private Integer  type;
     private Integer  amount;
     private String  comment;
-    private String  created_at;
+    private String created_at;
     private String  updated_at;
+
 
     public void save() {
         HashMap<String, Object> value = new HashMap<>();
@@ -26,6 +29,7 @@ public class BalanceOperationModel extends Model {
         value.put("type", type);
         value.put("amount", amount);
         value.put("comment", comment);
+        value.put("created_at", created_at);
 
         arrayData.add(value);
     }

@@ -2,6 +2,8 @@ package core.fe.gerchikPO.login;
 
 import core.fe.AbstractPage;
 import core.fe.BaseUrl;
+import core.fe.gerchikPO.Pages.MainPage.MainPage;
+import core.seeds.AccountTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -53,6 +55,18 @@ public class GerchikLoginPage extends AbstractPage {
     public void checkOnValidationCssValueOfInputs(){
         Assert.assertEquals(  "InncorectBorderCssValue",   emailOrPhoneInput.getCssValue("border"),"2px solid rgb(251, 54, 64)");
         Assert.assertEquals(  "InncorectBorderCssValue",   passInput.getCssValue("border"),"2px solid rgb(251, 54, 64)");
+
+    }
+
+    public MainPage loginInSystem(String emeil, String pass){
+        AccountTest accountTest = new AccountTest();
+        accountTest.createTable();
+
+
+        emailOrPhoneInput.sendKeys(emeil);
+        passInput.sendKeys(pass);
+        clickOnLoginButton();
+        return new MainPage(driver);
 
     }
 

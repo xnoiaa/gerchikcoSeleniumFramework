@@ -14,7 +14,7 @@ public class LKRegistrationPage extends BaseTest {
     @Test
     public void testRegistrationValidationExeptionText() {
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         gerchikRegistrationPageStepOne.clickOnSubmitButton();
         List<String> errorText = gerchikRegistrationPageStepOne.getAllErrorsText();
         List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
@@ -35,7 +35,7 @@ public class LKRegistrationPage extends BaseTest {
 
     @Test
     public void clickOnFirstInputAndCheckNonAvailableValidationErrorTest() {
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPagesStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         ArrayList<String> validationsTextErrorArray = gerchikRegistrationPagesStepOne.clickOnFirstInputAndCheckNonAvailableValidationError();
         Assert.assertNotEquals("Не зникає валідаційна помилка при кліці на поле", true, validationsTextErrorArray.get(0).equals(validationsTextErrorArray.get(1)));
@@ -43,7 +43,7 @@ public class LKRegistrationPage extends BaseTest {
 
     @Test
     public void checkValidationErrorOnMaximumChars() {
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         List<String> allErrorsText = gerchikRegistrationPageStepOne.sendKEysAndGetValidationErrorMOreChars();
         List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
@@ -72,7 +72,7 @@ public class LKRegistrationPage extends BaseTest {
 
     @Test
     public void checkOnCorrectWorkPhoneInput() {
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,"001234545");
         List<String> allInputsNames = gerchikRegistrationPageStepOne.getInputs();
@@ -89,7 +89,7 @@ public class LKRegistrationPage extends BaseTest {
 
     @Test
     public void checkRegistration()   {
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         GerchikRegistrationPageStepTwo gerchikRegistrationPageStepTwo = gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,phone );
         Assert.assertEquals("Incorrect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());
@@ -103,7 +103,7 @@ public class LKRegistrationPage extends BaseTest {
 
     @Test
     public void confirmInvalidEmailConfirCode(){
-        geBaseLktUrl("/registration");
+        getBaseLktUrl("/registration");
         GerchikRegistrationPageStepOne gerchikRegistrationPageStepOne = new GerchikRegistrationPageStepOne(getWebDriver());
         GerchikRegistrationPageStepTwo gerchikRegistrationPageStepTwo = gerchikRegistrationPageStepOne.checkPhoneInputOnCorrectWork(email,phone );
         Assert.assertEquals("Incorrect email value",email,gerchikRegistrationPageStepTwo.getEmailValueFromRegistrationInput());

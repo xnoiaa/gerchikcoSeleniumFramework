@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public interface IModel {
-    public String getTable();
-    public ArrayList<HashMap<String, Object>> getArrayData();
-    public void save();
+     String getTable();
+     ArrayList<HashMap<String, Object>> getArrayData();
+     void save();
 }

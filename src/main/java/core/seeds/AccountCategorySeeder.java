@@ -1,8 +1,12 @@
 package core.seeds;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class AccountCategorySeeder extends BaseSeeder {
     public void run() {
         AccountCategoryModel model = new AccountCategoryModel();
+
 
         for (int i = 0;i < 1; i++) {
             model.setAccount_id(Integer.parseInt(faker.address().buildingNumber()));
