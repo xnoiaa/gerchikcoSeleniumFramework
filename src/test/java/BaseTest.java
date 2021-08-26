@@ -19,6 +19,14 @@ public  class BaseTest {
         return webDriver;
     }
 
+    public void geBaseLktUrl(String Url) {
+        getWebDriver().get("http://localhost:3000" + Url);
+    }
+
+    public void geBaseLktUrl() {
+        getWebDriver().get("http://localhost:3000");
+    }
+
     @Before
     public void driverSetUp() {
 

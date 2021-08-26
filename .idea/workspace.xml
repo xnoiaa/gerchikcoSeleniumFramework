@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RecoveryPasswordPage">
+  <component name="RunManager" selected="JUnit.RecoveryPasswordPage.isPresentValidationErrorAfterClick">
     <configuration name="LoginPage.checkValidationsExeptionText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RecoveryPasswordPage" />
         <item itemvalue="JUnit.RecoveryPasswordPage.isPresentValidationErrorAfterClick" />
+        <item itemvalue="JUnit.RecoveryPasswordPage" />
         <item itemvalue="JUnit.RecoveryPasswordPage.isPresentValidationError" />
         <item itemvalue="JUnit.RecoveryPasswordPage.test" />
         <item itemvalue="JUnit.LoginPage.checkValidationsExeptionText" />

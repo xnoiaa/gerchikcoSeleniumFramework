@@ -6,7 +6,7 @@ public class LoginPage extends BaseTest {
     @Test
     public void checkValidationsExeptionCssValue(){
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
-        getWebDriver().get("http://localhost:3000");
+        geBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationCssValueOfInputs();
     }
@@ -14,7 +14,7 @@ public class LoginPage extends BaseTest {
     @Test
     public void checkValidationsExeptionText(){
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
-        getWebDriver().get("http://localhost:3000");
+        geBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationTextError();
     }
