@@ -59,15 +59,10 @@ public class GerchikLoginPage extends AbstractPage {
     }
 
     public MainPage loginInSystem(String emeil, String pass){
-        AccountTest accountTest = new AccountTest();
-        accountTest.createTable();
-
-
         emailOrPhoneInput.sendKeys(emeil);
         passInput.sendKeys(pass);
         clickOnLoginButton();
         return new MainPage(driver);
-
     }
 
     public void clickOnLoginButton(){

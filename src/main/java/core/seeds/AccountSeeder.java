@@ -40,7 +40,4 @@ public class AccountSeeder extends BaseSeeder {
     public String getPass(){
         return model.getPassword();
     }
-
-
-
 }

@@ -5,35 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountSeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/AccountCategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountCategoryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/AccountCategorySeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountCategorySeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/BalanceOperationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/BalanceOperationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/BalanceOperationSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/BalanceOperationSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/BaseSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/BaseSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/IModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LKRegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Seeds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Seeds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/seeds/AccountCategoryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/seeds/AccountCategoryModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/seeds/AccountCategorySeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/seeds/AccountCategorySeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/seeds/BalanceOperationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/seeds/BalanceOperationModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/seeds/BalanceOperationSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/seeds/BalanceOperationSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/seeds/BaseSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/seeds/BaseSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LKRegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/AccountSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/StockConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/StockConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RecoveryPasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RecoveryPasswordPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Seeds.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Seeds.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +55,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
