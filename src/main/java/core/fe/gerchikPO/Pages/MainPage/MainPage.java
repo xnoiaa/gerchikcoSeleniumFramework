@@ -18,9 +18,18 @@ public class MainPage extends AbstractPage {
 
 
 
+    @FindBy(xpath = "//a[@href=\"/support\"]\n")
+    private WebElement supportMenuVerticalPage;
+
+
     public MainPage(WebDriver driver) {
         super(driver);
     }
+
+    public void clicckOnSupportMenuVerticalPage(){
+        supportMenuVerticalPage.click();
+    }
+
 
     public void isPresentMainPageTitle(){
         Assert.assertEquals(mainPageTitle.size(),1);

@@ -29,8 +29,6 @@ public class LoginPage extends BaseTest {
         accountTest.createTable();
         MainPage mainPage =  gerchikLoginPage.loginInSystem(accountTest.getEmailModel(),accountTest.getPassModel());
         mainPage.isPresentMainPageTitle();
-
-
     }
 
 }
