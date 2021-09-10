@@ -1,6 +1,7 @@
 package core.fe.gerchikPO.Pages.MainPage;
 
 import core.fe.AbstractPage;
+import core.fe.gerchikPO.Pages.supportPage.MainPageSupport;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,8 +27,9 @@ public class MainPage extends AbstractPage {
         super(driver);
     }
 
-    public void clicckOnSupportMenuVerticalPage(){
+    public MainPageSupport clicckOnSupportMenuVerticalPage(){
         supportMenuVerticalPage.click();
+        return new  MainPageSupport(driver);
     }
 
 

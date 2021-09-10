@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuppurtMainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/AccountSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/AccountSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/seeds/StockConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/seeds/StockConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/GerchikLoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/supportPage/MainPageSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/supportPage/MainPageSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginPage.loginUser">
+  <component name="RunManager" selected="JUnit.SuppurtMainPageTest.checkSort">
     <configuration name="LoginPage.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,20 +87,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecoveryPasswordPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecoveryPasswordPage.isPresentValidationErrorAfterClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
-      <option name="METHOD_NAME" value="isPresentValidationErrorAfterClick" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,13 +117,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SuppurtMainPageTest.checkSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SuppurtMainPageTest" />
+      <option name="METHOD_NAME" value="checkSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SuppurtMainPageTest.checkSort" />
+        <item itemvalue="JUnit.MainPageTest.loginTest" />
         <item itemvalue="JUnit.LoginPage.loginUser" />
         <item itemvalue="JUnit.Seeds.accountsCreation" />
         <item itemvalue="JUnit.Seeds.balanceoperationCreation" />
-        <item itemvalue="JUnit.RecoveryPasswordPage.isPresentValidationErrorAfterClick" />
-        <item itemvalue="JUnit.RecoveryPasswordPage" />
       </list>
     </recent_temporary>
   </component>
