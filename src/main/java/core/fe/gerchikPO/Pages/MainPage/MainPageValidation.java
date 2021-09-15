@@ -2,6 +2,7 @@ package core.fe.gerchikPO.Pages.MainPage;
 
 import core.fe.AbstractPage;
 import core.fe.gerchikPO.Pages.supportPage.MainPageSupport;
+import core.fe.gerchikPO.login.GerchikLoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,12 +11,7 @@ import org.openqa.selenium.support.FindBys;
 
 import java.util.List;
 
-public class MainPage extends AbstractPage {
-
-    @FindBys({
-            @FindBy(xpath = "//div[@class=\"text-page-title\"]")
-    })
-    private List<WebElement> mainPageTitle;
+public class MainPageValidation extends AbstractPage {
 
 
     @FindBy(xpath = "//a[@href=\"/support\"]\n")
@@ -39,12 +35,22 @@ public class MainPage extends AbstractPage {
     @FindBy(xpath = "//div[@class='close float--right close--margins']")
     private WebElement closePopupButton;
 
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[2]/div[3]/div[2]/div[1]/div[3]/div/div[2]/div[1]")
+    private WebElement openDemoBlock;
+
+    @FindBy(xpath = "//span[@class=\"button button--colored button--red width--px_220 text--center button--pages\"]")
+    private WebElement openDemoAccountButton;
+
+    @FindBy(xpath = "//div[@class='margin--top_40 button button--colored button--blue width--px_240 text--center button--pages']")
+    private WebElement closeDemoPopup;
+
+    @FindBy(xpath = "    /html/body/div/div[2]/div[1]/div/ul/li[8]/a/span[2]")
+    private WebElement logoutButton;
+
     @FindBys({
             @FindBy(xpath = "//div[@class=\"verification-steps__step flex--row_center-left margin--bottom_20 \"]")
     })
     private List<WebElement> verificationSteps;
-
-
 
 
     @FindBys({
@@ -53,8 +59,24 @@ public class MainPage extends AbstractPage {
     private List<WebElement> popup;
 
 
+    @FindBys({
+            @FindBy(xpath = "//div[@class='popup__inner paddings--all_40 popup__inner--620 margin--left_10 margin--right_10 demo-verification-steps_popup']")
+    })
+    private List<WebElement> demoPopup;
 
-    public MainPage(WebDriver driver) {
+
+    @FindBys({
+            @FindBy(xpath = "//div[@class=\"text-page-title\"]")
+    })
+    private List<WebElement> mainPageTitle;
+
+
+    @FindBys({
+            @FindBy(xpath = "//span[@class='blue-link-underline cursor--pointer']")
+    })
+    private List<WebElement> tariffPlanAndPlatformInTradingAccountBlock;
+
+    public MainPageValidation(WebDriver driver) {
         super(driver);
     }
 
@@ -77,7 +99,6 @@ public class MainPage extends AbstractPage {
         Assert.assertEquals(0, popup.size());
     }
 
-
     public void depositButtonInVertikalMenuCheck (){
         test(depositButtonInVertikalMenu);
     }
@@ -86,9 +107,30 @@ public class MainPage extends AbstractPage {
         test(depositGreenButton);
     }
 
+    public void openDemoAccountButtonCheck(){
+        openDemoBlock.click();
+    }
+
     public void checkVerificationSteps(){
         for (int i = 1; verificationSteps.size()>i; i++ )    {
             test(verificationSteps.get(i));
+        }
+    }
+
+    public void checkDemoPopup(){
+        openDemoAccountButton.click();
+        Assert.assertEquals(1, demoPopup.size());
+        closeDemoPopup.click();
+    }
+
+    public GerchikLoginPage  logoutButtonClick (){
+        logoutButton.click();
+        return new GerchikLoginPage(driver);
+    }
+
+    public void checkModalWindowSelectTariffPlanAndPlatformInTradingAccountBlock(){
+        for (int i =0;i<tariffPlanAndPlatformInTradingAccountBlock.size();i++){
+            test(tariffPlanAndPlatformInTradingAccountBlock.get(i));
         }
     }
 

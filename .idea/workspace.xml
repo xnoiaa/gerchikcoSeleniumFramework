@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/verificationPage/MainVerificationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/GerchikLoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/supportPage/MainPageSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/supportPage/MainPageSupport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuppurtMainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuppurtMainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SuppurtMainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SuppurtMainPageTest.class" afterDir="false" />
     </list>
@@ -75,13 +79,20 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainPageTest.checkPopup">
-    <configuration name="LoginPage.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in selenium_qa_framework-master121">
+    <configuration name="All in selenium_qa_framework-master121" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginPage" />
-      <option name="METHOD_NAME" value="loginUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LKRegistrationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework-master121" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,22 +107,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecoveryPasswordPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Seeds.accountsCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Seeds" />
-      <option name="METHOD_NAME" value="accountsCreation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="RecoveryPasswordPage" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in selenium_qa_framework-master121" />
+        <item itemvalue="JUnit.RecoveryPasswordPage" />
+        <item itemvalue="JUnit.LKRegistrationPage" />
         <item itemvalue="JUnit.MainPageTest.checkPopup" />
         <item itemvalue="JUnit.SuppurtMainPageTest.checkSort" />
-        <item itemvalue="JUnit.MainPageTest.loginTest" />
-        <item itemvalue="JUnit.LoginPage.loginUser" />
-        <item itemvalue="JUnit.Seeds.accountsCreation" />
       </list>
     </recent_temporary>
   </component>

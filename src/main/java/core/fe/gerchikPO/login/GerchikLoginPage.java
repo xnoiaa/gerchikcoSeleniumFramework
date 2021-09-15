@@ -2,8 +2,7 @@ package core.fe.gerchikPO.login;
 
 import core.fe.AbstractPage;
 import core.fe.BaseUrl;
-import core.fe.gerchikPO.Pages.MainPage.MainPage;
-import core.seeds.AccountTest;
+import core.fe.gerchikPO.Pages.MainPage.MainPageValidation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -58,11 +57,11 @@ public class GerchikLoginPage extends AbstractPage {
 
     }
 
-    public MainPage loginInSystem(String emeil, String pass){
+    public MainPageValidation loginInSystem(String emeil, String pass){
         emailOrPhoneInput.sendKeys(emeil);
         passInput.sendKeys(pass);
         clickOnLoginButton();
-        return new MainPage(driver);
+        return new MainPageValidation(driver);
     }
 
     public void clickOnLoginButton(){
@@ -70,6 +69,10 @@ public class GerchikLoginPage extends AbstractPage {
     }
 
 
+    public void testLoginButton(){
+        System.out.println(loginButton.getText());
+        Assert.assertEquals("Войти",loginButton.getText());
+    }
 
 
 }

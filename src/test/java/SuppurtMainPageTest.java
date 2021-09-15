@@ -1,4 +1,4 @@
-import core.fe.gerchikPO.Pages.MainPage.MainPage;
+import core.fe.gerchikPO.Pages.MainPage.MainPageValidation;
 import core.fe.gerchikPO.Pages.supportPage.MainPageSupport;
 import core.fe.gerchikPO.login.GerchikLoginPage;
 import org.junit.Test;
@@ -10,7 +10,7 @@ public class SuppurtMainPageTest extends BaseTest{
     public void loginTest(){
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
-        MainPage mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
+        MainPageValidation mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
         MainPageSupport mainPageSupport = mainPage.clicckOnSupportMenuVerticalPage();
         mainPageSupport.createSupportTicket();
         mainPageSupport.closeTicketWithStarsOrWithOutStars(true);
@@ -21,7 +21,7 @@ public class SuppurtMainPageTest extends BaseTest{
         //Інсертити через базу юзера
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
-        MainPage mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
+        MainPageValidation mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
         MainPageSupport mainPageSupport = mainPage.clicckOnSupportMenuVerticalPage();
         mainPageSupport.createSupportTicket();
         try {

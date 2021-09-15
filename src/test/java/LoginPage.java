@@ -1,4 +1,4 @@
-import core.fe.gerchikPO.Pages.MainPage.MainPage;
+import core.fe.gerchikPO.Pages.MainPage.MainPageValidation;
 import core.fe.gerchikPO.login.GerchikLoginPage;
 import core.seeds.AccountTest;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class LoginPage extends BaseTest {
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
         accountTest.createTable();
-        MainPage mainPage =  gerchikLoginPage.loginInSystem(accountTest.getEmailModel(),accountTest.getPassModel());
+        MainPageValidation mainPage =  gerchikLoginPage.loginInSystem(accountTest.getEmailModel(),accountTest.getPassModel());
         mainPage.isPresentMainPageTitle();
     }
 
