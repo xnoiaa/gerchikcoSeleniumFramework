@@ -1,4 +1,4 @@
-import core.fe.gerchikPO.recoveryPass.RecoveryPasswordPageTest;
+import core.fe.gerchikPO.registrationRecoveryPass.RecoveryPasswordPageTest;
 import org.junit.Assert;
 import org.junit.Test;
 

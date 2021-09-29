@@ -1,6 +1,7 @@
 package core.fe.gerchikPO.Pages.MainPage;
 
 import core.fe.AbstractPage;
+import core.fe.gerchikPO.Pages.profilePage.MainPageProfile;
 import core.fe.gerchikPO.Pages.supportPage.MainPageSupport;
 import core.fe.gerchikPO.login.GerchikLoginPage;
 import org.junit.Assert;
@@ -46,6 +47,9 @@ public class MainPageValidation extends AbstractPage {
 
     @FindBy(xpath = "    /html/body/div/div[2]/div[1]/div/ul/li[8]/a/span[2]")
     private WebElement logoutButton;
+
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[1]/div/ul/li[7]/a/span[2]")
+    private WebElement profileButton;
 
     @FindBys({
             @FindBy(xpath = "//div[@class=\"verification-steps__step flex--row_center-left margin--bottom_20 \"]")
@@ -132,6 +136,11 @@ public class MainPageValidation extends AbstractPage {
         for (int i =0;i<tariffPlanAndPlatformInTradingAccountBlock.size();i++){
             test(tariffPlanAndPlatformInTradingAccountBlock.get(i));
         }
+    }
+
+    public MainPageProfile clickOnProfileButton(){
+        profileButton.click();
+        return new MainPageProfile(driver);
     }
 
 }

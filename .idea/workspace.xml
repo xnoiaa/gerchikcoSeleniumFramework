@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/verificationPage/MainVerificationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SuppurtMainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuppurtMainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/MainPage/MainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/login/GerchikLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SuppurtMainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SuppurtMainPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/registrationRecoveryPass/RecoveryPasswordPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553092624486" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/core" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/core/fe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -79,7 +75,7 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in selenium_qa_framework-master121">
+  <component name="RunManager" selected="JUnit.ProfilePageTest.test">
     <configuration name="All in selenium_qa_framework-master121" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,6 +103,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfilePageTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProfilePageTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RecoveryPasswordPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
@@ -116,23 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuppurtMainPageTest.checkSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SuppurtMainPageTest" />
-      <option name="METHOD_NAME" value="checkSort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProfilePageTest.test" />
         <item itemvalue="JUnit.All in selenium_qa_framework-master121" />
         <item itemvalue="JUnit.RecoveryPasswordPage" />
         <item itemvalue="JUnit.LKRegistrationPage" />
         <item itemvalue="JUnit.MainPageTest.checkPopup" />
-        <item itemvalue="JUnit.SuppurtMainPageTest.checkSort" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +156,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

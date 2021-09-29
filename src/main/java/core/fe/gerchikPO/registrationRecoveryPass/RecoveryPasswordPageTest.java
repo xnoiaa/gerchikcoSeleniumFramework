@@ -1,20 +1,14 @@
-package core.fe.gerchikPO.recoveryPass;
+package core.fe.gerchikPO.registrationRecoveryPass;
 
 
 import core.fe.AbstractPage;
 import core.fe.BaseUrl;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.concurrent.locks.Condition;
-import java.util.stream.Collectors;
 
 @BaseUrl(value = "http://localhost:3000/recovery")
 

@@ -57,12 +57,21 @@ public class GerchikLoginPage extends AbstractPage {
 
     }
 
+    public void loginInSystemm(String emeil, String pass){
+        emailOrPhoneInput.sendKeys(emeil);
+        passInput.sendKeys(pass);
+        clickOnLoginButton();
+    }
+
+
     public MainPageValidation loginInSystem(String emeil, String pass){
         emailOrPhoneInput.sendKeys(emeil);
         passInput.sendKeys(pass);
         clickOnLoginButton();
         return new MainPageValidation(driver);
     }
+
+
 
     public void clickOnLoginButton(){
         loginButton.click();

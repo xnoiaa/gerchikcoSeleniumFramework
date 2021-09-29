@@ -1,4 +1,4 @@
-package core.fe.gerchikPOcheckModalWindowSelectTariffPlanAndPlatformInTradingAccountBlock.Pages.MainPage;
+package core.fe.gerchikPO.Pages.MainPage;
 
 import core.fe.AbstractPage;
 import org.openqa.selenium.WebDriver;
