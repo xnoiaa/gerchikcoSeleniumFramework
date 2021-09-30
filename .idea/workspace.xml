@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPagePhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/MainPage/MainPageValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/login/GerchikLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/recoveryPass/RecoveryPasswordPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/registrationRecoveryPass/RecoveryPasswordPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecoveryPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,30 +70,11 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProfilePageTest.test">
+  <component name="RunManager" selected="JUnit.ProfilePageTest.test3">
     <configuration name="All in selenium_qa_framework-master121" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium_qa_framework-master121" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LKRegistrationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LKRegistrationPage" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainPageTest.checkPopup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework-master121" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
-      <option name="METHOD_NAME" value="checkPopup" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,6 +84,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProfilePageTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfilePageTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProfilePageTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfilePageTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_qa_framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProfilePageTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProfilePageTest.test3" />
+        <item itemvalue="JUnit.ProfilePageTest.test2" />
         <item itemvalue="JUnit.ProfilePageTest.test" />
         <item itemvalue="JUnit.All in selenium_qa_framework-master121" />
         <item itemvalue="JUnit.RecoveryPasswordPage" />
-        <item itemvalue="JUnit.LKRegistrationPage" />
-        <item itemvalue="JUnit.MainPageTest.checkPopup" />
       </list>
     </recent_temporary>
   </component>

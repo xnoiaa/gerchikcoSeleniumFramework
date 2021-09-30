@@ -16,6 +16,28 @@ public class ProfilePageTest extends BaseTest{
         MainPageProfile mainPageProfile =  mainPage.clickOnProfileButton() ;
         mainPageProfile.clickOnChangePasswordButton();
         mainPageProfile.test();
+    }
 
+    //Тест перевіряє некоректно введений невірний код підтвердження при підтвердженні телефона
+    @Test
+    public void test2(){
+        GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
+        getBaseLktUrl();
+        MainPageValidation mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
+        MainPageProfile mainPageProfile =  mainPage.clickOnProfileButton() ;
+        mainPageProfile.clickOnChangePhoneButton();
+        mainPageProfile.sendIncorrectSmsCodeScenario();
+    }
+
+    //Тест на перевірку кількості відправлень смс коду(щоб не більше 3шт)
+    //Дописати перевірку на кількість відправлень
+    @Test
+    public void test3 (){
+        GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
+        getBaseLktUrl();
+        MainPageValidation mainPage = gerchikLoginPage.loginInSystem("qa3@starway-media.com","1111111q");
+        MainPageProfile mainPageProfile =  mainPage.clickOnProfileButton() ;
+        mainPageProfile.clickOnChangePhoneButton();
+        mainPageProfile.sendSmsThreeTimes();
     }
 }
