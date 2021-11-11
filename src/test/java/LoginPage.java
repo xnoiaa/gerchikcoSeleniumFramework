@@ -26,6 +26,7 @@ public class LoginPage extends BaseTest {
         getBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationTextError();
+
         doScreenshot();
 
     }

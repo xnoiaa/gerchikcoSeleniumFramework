@@ -53,6 +53,7 @@ public  class BaseTest {
 
     public  void doScreenshot() throws IOException {
         File scrFile = ((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("./images/checkValidationsExeptionText.png"));
+        StackTraceElement ste = Thread.currentThread().getStackTrace()[2];
+        FileUtils.copyFile(scrFile, new File("./images/"+ "Class-"+ste.getClassName()+".Method-"+ste.getMethodName() + ".png"));
     }
 }
