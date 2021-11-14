@@ -12,21 +12,22 @@ import java.io.IOException;
 public class LoginPage extends BaseTest {
 
     @Test
-    public void checkValidationsExeptionCssValue() throws IOException {
+    public void checkValidationsExeptionCssValue()  {
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationCssValueOfInputs();
-        File scrFile = ((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("./image.png"));
+
     }
 
     @Test
-    public void checkValidationsExeptionText(){
+    public void checkValidationsExeptionText() throws IOException {
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationTextError();
+        doScreenshot();
+
     }
 
     @Test

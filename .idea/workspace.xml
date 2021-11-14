@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a517f1-c224-4b1b-8e01-c114a000142e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/fe/gerchikPO/Pages/profilePage/MainPageProfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -74,7 +72,7 @@
       <recent name="core.be" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainPageTest.checkPopup">
+  <component name="RunManager" selected="JUnit.LoginPage.checkValidationsExeptionText">
     <configuration name="LoginPage.checkValidationsExeptionCssValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gerchikcoSeleniumFramework" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,21 +83,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest.checkPopup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPage.checkValidationsExeptionText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gerchikcoSeleniumFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
-      <option name="METHOD_NAME" value="checkPopup" />
+      <option name="MAIN_CLASS_NAME" value="LoginPage" />
+      <option name="METHOD_NAME" value="checkValidationsExeptionText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfilePageTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium_qa_framework" />
+    <configuration name="MainPageTest.checkPopup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerchikcoSeleniumFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProfilePageTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
+      <option name="METHOD_NAME" value="checkPopup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginPage.checkValidationsExeptionText" />
         <item itemvalue="JUnit.MainPageTest.checkPopup" />
         <item itemvalue="JUnit.LoginPage.checkValidationsExeptionCssValue" />
         <item itemvalue="JUnit.ProfilePageTest.test3" />
         <item itemvalue="JUnit.ProfilePageTest.test2" />
-        <item itemvalue="JUnit.ProfilePageTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -160,5 +158,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
