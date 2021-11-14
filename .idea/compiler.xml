@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="selenium_qa_framework-master121" />
         <module name="selenium_qa_framework" />
+        <module name="gerchikcoSeleniumFramework" />
       </profile>
     </annotationProcessing>
   </component>

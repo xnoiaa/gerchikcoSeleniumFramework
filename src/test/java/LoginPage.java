@@ -2,15 +2,23 @@ import core.fe.gerchikPO.Pages.MainPage.MainPageValidation;
 import core.fe.gerchikPO.login.GerchikLoginPage;
 import core.seeds.AccountTest;
 import org.junit.Test;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.unitils.thirdparty.org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
 
 public class LoginPage extends BaseTest {
 
     @Test
-    public void checkValidationsExeptionCssValue(){
+    public void checkValidationsExeptionCssValue() throws IOException {
         GerchikLoginPage gerchikLoginPage = new GerchikLoginPage(getWebDriver());
         getBaseLktUrl();
         gerchikLoginPage.clickOnLoginButton();
         gerchikLoginPage.checkOnValidationCssValueOfInputs();
+        File scrFile = ((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("./image.png"));
     }
 
     @Test
